@@ -13,6 +13,17 @@ app.get("/", async function (request, response) {
     response.json(r);
 });
 
+app.get("/aleatorio", async function (request, response) {
+
+    const numero = Math.floor(Math.random() * 100) + 1; 
+
+    const r = {
+        aleatorio: numero
+    };
+
+    response.json(r);
+});
+
 app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
 });
