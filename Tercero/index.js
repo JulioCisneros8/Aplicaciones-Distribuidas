@@ -92,7 +92,6 @@ app.post("/verifysha256", (req, res) => {
   return ok(res, { matches });
 });
 
-// Puerto
 app.listen(3000, function() {
   console.log(`Aplicacion ejemplo, escuchando en el puerto 3000!`);
 });
