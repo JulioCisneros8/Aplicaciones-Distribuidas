@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Saludo nombre="Julio" tipo="noches" />
+      <h2>Contador={count}</h2>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
