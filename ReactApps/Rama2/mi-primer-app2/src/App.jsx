@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Saludo from './Saludo.jsx'
+import RelojDigital from './RelojDigital.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Saludo nombre="Julio" tipo="noches" />
+      <RelojDigital />
       <h2>Contador: {count}</h2>
       <section id="center">
         <div className="hero">
