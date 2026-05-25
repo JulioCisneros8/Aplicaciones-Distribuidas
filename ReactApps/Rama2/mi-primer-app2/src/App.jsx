@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Saludo nombre="Julio" tipo="noches" />
-      <h2>Contador={count}</h2>
+      <h2>Contador: {count}</h2>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -24,12 +24,14 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
+        <button onClick={() => setCount(count + 1)}>
+          Incrementar
+        </button>
+        <button onClick={() => setCount(count - 1)}>
+          Decrementar
+        </button>
+        <button onClick={() => setCount(0)}>
+          Reiniciar
         </button>
       </section>
 
